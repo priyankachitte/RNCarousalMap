@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '8.0'
+target 'RNCarousalMap' do
+    pod 'React', :path => react_native_path = "../node_modules/react-native", :subspecs => ['DevSupport']
+    pod 'React/RCTGeolocation', :path => '../node_modules/react-native'
+    pod 'React/RCTImage', :path => '../node_modules/react-native'
+    pod 'React/RCTNetwork', :path => '../node_modules/react-native'
+    pod 'React/RCTText', :path => '../node_modules/react-native'
+    pod 'React/RCTWebSocket', :path => '../node_modules/react-native'
+   pod "yoga", :path => "#{react_native_path}/ReactCommon/yoga"
+
+  pod 'GoogleMaps'
+
+
+
+
+  pod 'react-native-maps', :path => '../node_modules/react-native-maps'
+
+end
